@@ -1,0 +1,18 @@
+{% extends 'd_main/base.html' %} {% load crispy_forms_tags %}
+<!-- -->
+{% block content %}
+
+<div class="container my-5 d-flex flex-column gap-5">
+  <div class="d-flex text-center flex-column">
+    <h2>Join now on out application!</h2>
+    <span class="secondary">Register Form</span>
+  </div>
+  <form action="" method="POST">
+    {% csrf_token %} {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+
+  <div>Already have an account? <a href="{% url 'login' %}">Login Here</a></div>
+</div>
+
+{% endblock %}
