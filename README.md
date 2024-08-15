@@ -6,7 +6,6 @@ so using this project help you have:
 - full design and pages
 - authenticated logics : register + login + logout
 
--------------------------------------------------------------------------------
 
 ## To start using this starter : 
 
